@@ -20,6 +20,10 @@ body{
 }
 main{
     flex-grow: 1;
+    background-image: url(../img/tic-background.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*HEADER*/
@@ -27,21 +31,25 @@ header{
     position: fixed;
     min-width: 100%;
     z-index: 100;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.171);
 }
 .header-container{
     display: flex;
     justify-content: space-between;
-    padding:15px;
+    padding:10px;
     user-select: none;
     align-items: center;
 }
-.header-title{
-    font-size: 1.1rem;
+.header-title img{
+    width: 130px;
+    cursor: pointer;
 }
 .header-container a{
     margin-left: 15px;
     transition: 0.2s;
     font-size: 1rem;
+    color: white;
 }
 .header-container a:hover{
     transform: scale(1.1);
@@ -71,50 +79,111 @@ main{
     justify-content: center;
     user-select: none;
 }
+.main-par{
+    max-width: 800px;
+    text-align: center;
+    margin: 25px;
+    color: rgb(238, 238, 238);
+}
 .main-tit-item{
     font-size: 5rem;
     cursor: default;
-    transition: all .2s;
+    color: white;
 }
+
 
 .div-main-btn{
     display: flex;
     justify-content: center;
     user-select: none;
 }
-.main-btn{
-    background-color: white;
-    padding: 8px 13px;
-    border-radius: 15px;
-    transition: 0.2s;
+.main-btn {
+    background-color: #f3f7fe;
+    color: #f63b3b;
+    border: none;
     cursor: pointer;
-    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .main-btn:hover {
+    background-color: #f63b3b;
+    box-shadow: 0 0 0 5px #f63b3b5f;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  .main-btn:active{
+    transform: scale(0.8);
+  }
+
+
+/*NUESTROS SERVICIOS*/
+.nuestros-servicios{
+    min-height: 100vh;
+    text-align: center;
 }
-.div-main-btn h1{
-    font-size: 0.9rem;
-    font-weight: 100px;
-    transition: all .2s;
-    margin: 0;
-    display: inline-block;
+.nue-ser-con{
+    display: flex;
+    justify-content: center;
 }
-.main-btn:hover{
-    transform: scale(1.07);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+.nue-serv-item{
+    margin: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+    user-select: none;
+    transition: .2s;
+}
+.nue-serv-item p{
+    width: 280px;
+    margin-top: 15px;
+}
+.nue-serv-item img{
+    width: 280px;
+    border-radius: 10px;
 }
 
-.main-btn:hover h1 {
-    transform: scale(1.1);
+.nue-serv-item:hover{
+    transform: translateY(-10px);
 }
-.main-btn:active{
-    transform: scale(1);
-    background-color: rgba(76, 124, 87, 0.5);
-    color: white;
+.nue-serv-title{
+    font-size: 2rem;
+    margin: 70px 0px 10px 0px;
+    user-select: none;
+    color: #f63b3b;
 }
-.main-par{
-    max-width: 800px;
-    text-align: center;
-    margin: 25px;
+.leer-mas-btn{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 15px;
+    transition: .2s;
 }
+.leer-mas-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    border: 2px solid red;
+}
+.leer-mas-btn:Active{
+    transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*GALLERY*/
 .gallery{
     min-height: 100vh;
