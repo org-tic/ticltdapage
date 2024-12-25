@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/carrusel.css">
     <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
+    <script src="js/funcionts.js"></script>
+    
 </head>
 <body>
     <!--HEADER-->
@@ -18,7 +22,6 @@
                 <a href="#home">Inicio</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#home">PQR</a>
-                <a href="#gallery">Trabaja con nosotros</a>
                 <a href="#about">Contactanos</a>
                 <a href="#about">Portal Corporativo</a>
             </div>
@@ -28,14 +31,11 @@
     <main id="home">
         <div class="main-container">
             <div class="main-title">
-                <h2 class="main-tit-item">TIC!</h2>
+                <h1>Somos </h1>
+                <h2 class="main-tit-item"> TIC!</h2>
             </div>
             <div class="main-par">
-                <p>
-                    Reconocidos por nuestros clientes actuales y potenciales a nivel nacional, como una empresa líder en el sector en la prestación de nuestros servicios.</p>
-            </div>
-            <div class="div-main-btn">
-                <a class="main-btn" href="#servicios">SERVICIOS</a>
+                <p><span id="span-dinamico">Somos Lideres!</span></p>
             </div>
         </div>
     </main>
@@ -48,17 +48,17 @@
             <div class="nue-serv-item">
                 <img src="img/squ-pic.jpg" alt="squared picture example">
                 <p>Suspencion y reconexion desde centro de medicion.</p>
-                <a href="#" class="leer-mas-btn">Leer mas!</a>
+                <a href="#servicios" onclick="abrir_pop1()" class="leer-mas-btn estilo-btn-general">Leer mas!</a>
             </div>
             <div class="nue-serv-item">
                 <img src="img/squ-pic.jpg" alt="squared picture example">
                 <p>Suspencion y reconexion desde acometida.</p>
-                <a href="#" class="leer-mas-btn">Leer mas!</a>
+                <a href="#" class="leer-mas-btn estilo-btn-general">Leer mas!</a>
             </div>
             <div class="nue-serv-item">
                 <img src="img/squ-pic.jpg" alt="squared picture example">
                 <p>Mensajeria expresa.</p>
-                <a href="#" class="leer-mas-btn">Leer mas!</a>
+                <a href="#" class="leer-mas-btn estilo-btn-general">Leer mas!</a>
             </div>
         </div>
     </section>
@@ -70,7 +70,6 @@
                 <div class="title-gal-let">
                     <h1 class="gal-item-tit">GALERIA</h1>
                 </div>
-                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo distinctio assumenda vel illo ipsa molestias, error aspernatur </p>
             </div>
             <div class="gallery-img">
@@ -78,15 +77,55 @@
                     <img src="img/img-gal-1.jpg" alt="tic ltda">
                     <img src="img/img-gal-2.jpg" alt="tic ltda">
                     <img src="img/img-gal-3.jpg" alt="tic ltda">
+                    <img src="img/img-gal-4.jpeg" alt="tic ltda">
+                    <img src="img/img-gal-5.jpg" alt="tic ltda">
                 </section>
             </div>
+            
         </div>
     </div>
+    
     <!---->
-    <footer>
-        <a href="#">a</a>
-        <a href="#">a</a>
-        <a href="#">a</a>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+                <div class="footer-box1-container">
+                    <i class="fa-solid fa-user"></i>
+                    <span><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJpyXiX2FEUNwwqrAVTXdS8vIXBWGOMF9eXLDqv4C2NwKbkA/viewform" target="_blank">Trabaja con nosotros!</a></span>
+                </div> 
+            </div>
+            <div class="footer-box2">
+                <a class="item-footer" target="_blank" href="https://www.facebook.com/profile.php?id=61556307429310"><i class="fa-brands fa-facebook"></i></a>
+            <a class="item-footer" target="_blank" href="https://www.instagram.com/tic.ltda/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="item-footer" target="_blank" href="https://api.whatsapp.com/send/?phone=573114297746&text=Hola+TIC+LTDA.+Necesito+m%C3%A1s+informaci%C3%B3n.+%C2%BF+Podr%C3%ADas+ayudarme%3F&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
     </footer>
+
+
+    <!--POP UPS-->
+    <!--SUS REC MEDIDOR-->
+    <section id="sus_med" class="sus-med">
+        <div class="sus-med-container">
+            <div class="sus-med-btn-cerrar">
+                <a class="sus-med-btn" href="#galeria" onclick="cerrar_pop1()"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+            <div class="sus-med-box">
+                <div class="sus-med-title">
+                    <h1>Suspensión y reconexión desde centro de medición</h1>
+                </div>
+                <div class="sus-med-par">
+                    Realizar la reconexión del servicio público de gas natural por centro de medición cumpliendo con los requisitos establecidos por el cliente, con los procedimientos de calidad, seguridad y salud en el trabajo de la empresa y usando los elementos de protección personal para lograr un buen servicio y garantizar unas condiciones de trabajo seguras
+                </div>
+                <div class="sus-med-list">
+                    <ul>
+                        <li><strong>Enrutar:</strong> ordenar la ruta de trabajo, por predios en forma consecutiva.</li>
+                        <li><strong>Reconexion:</strong> procedimiento mediante el cual se desbloquean las acometidas de gases, para lograr reconexion.</li>
+                        <li><strong>Consola Administrativa:</strong> Aplicativo Web que permite interactuar con los datos del usuario en tiempo real y administrar ordenes de trabajo (OT).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

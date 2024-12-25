@@ -1,0 +1,53 @@
+.sus-med{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: -100%;
+    transition: .5s;
+}
+.sus-med-container{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.281);
+    width: auto;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+.sus-med-box{
+    max-width: 600px;
+    min-width: 270px;
+}
+.sus-med-title{
+    text-align: center;
+    color: #910000;
+}
+.sus-med-par{
+    margin: 30px 0px;
+    font-weight: 350;
+    font-size: 1rem;
+}
+.sus-med strong{
+    color: #910000;
+}
+.sus-med-list{
+    font-weight: 350;
+    margin-bottom: 15px;
+}
+
+.sus-med-btn-cerrar{
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all .2s;
+    user-select: none;
+}
+.sus-med-btn-cerrar:hover{
+    animation: girar .2s;
+    transform: scale(1.3);
+}
+@keyframes girar{
+    0%{
+        transform: rotate(90deg);
+    }
+}
