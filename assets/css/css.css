@@ -50,16 +50,18 @@ header{
 }
 
 /*MAIN*/
+.main-index{
+    background-image: url(../svg/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 main{
     display: flex;
     justify-content: center;
     height: 100vh;
     position: relative;
     z-index: 1;
-    background-image: url(../svg/bg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .main-container{
     flex-direction: column;
