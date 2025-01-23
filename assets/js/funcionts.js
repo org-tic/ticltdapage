@@ -1,5 +1,5 @@
 //SPAN DINAMICO DEL MAIN
-const palabras = ["Somos Profesionales!","Somos Lideres!"];
+const palabras = ["Somos profesionales!","Somos líderes!"];
 let indiceActual = 0;
 
 function cambiarPalabra() {
