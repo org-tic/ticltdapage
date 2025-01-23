@@ -270,7 +270,7 @@ main{
 }
 /*FOOTER*/
 footer{
-    position: absolute;
+    position: fixed;
     z-index: 99;
     width: 100%;
     display: flex;
