@@ -26,6 +26,9 @@ body{
     background-size: cover;
 }
 
+
+
+
 /*HEADER*/
 header{
     position: fixed;
@@ -186,19 +189,6 @@ main{
 .estilo-btn-general:Active{
     transform: translateY(4px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
