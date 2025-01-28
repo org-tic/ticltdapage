@@ -27,7 +27,15 @@ header{
     position: absolute;
     min-width: 100%;
     z-index: 100;
+    transform: translateY(-100%);
+    animation: slideDown .6s ease-out forwards;
+} 
+@keyframes slideDown {
+    to {
+      transform: translateY(0);
+    }
 }
+
 .header-container{
     display: flex;
     justify-content: space-around;
@@ -70,8 +78,14 @@ header{
     flex-direction: column;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: showUp 1.5s ease-out forwards;
 }
-
+@keyframes showUp {
+    to {
+      opacity: 1;
+    }
+}
 .main-title{
     text-align: center;
     display: flex;
@@ -150,15 +164,29 @@ header{
 .nue-ser-con{
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 .nue-serv-item{
     background-color: white;
     width: 270px;
-    margin: 15px;
+    margin: 30px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
     border-radius: 10px;
     user-select: none;
     transition:  all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    view-timeline-name: --reveal;
+    animation-name: aniScrollServ;
+    animation-fill-mode: backwards;
+    animation-timeline: --reveal;
+    animation-range: entry 1% cover 60%;
+
+}
+
+@keyframes aniScrollServ {
+    from {
+        margin: 100px;
+    }
 }
 .nue-serv-item:hover{
     outline: #ff0000 0.15em solid;
@@ -218,34 +246,94 @@ header{
 /*GALLERY*/
 .gallery{
     min-height: 100vh;
-    backdrop-filter: blur(2px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
 }
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .gallery-tittle{
     margin: 25px;
     text-align: center;
 }
-.gallery-img{
+.gallery-img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+}
+
+.gal-box-1 {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
-.sec-bac{
-    display: flex;
-    height: 430px;
-    top: 0;
-    left: 0;
-    width: 95%;
-}
-.sec-bac img{
-    width: 0;
-    flex-grow: 1;
+.gal-box-1 img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
     object-fit: cover;
-    filter: saturate(0);
-    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.274) 0 0px 16px;
 }
-.sec-bac img:hover{
+.img_active {
+    transform: scale(1.05);
+    border-radius: 5px;
+    transition: all .2s;
+}
+
+/*IMAGNES BOX 1*/
+
+.img-1{
+    transform: translateX(-200px) scale(0.8);
+    opacity: .5;
+    border-radius: 10px;
+}
+.img-2{
+    border-radius: 10px;
+    z-index: 100;
+}
+.img-3{
+    transform: translateX(200px) scale(0.8);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.gal-box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px;
+    z-index: 100;
+    margin-top: 300px;
     width: 100px;
-    filter: saturate(1);
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.img-1, .img-2, .img-3 {
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.gal-box-2 img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.img_active {
+    transform: scale(1.1);
+    border-color: red;
 }
 .title-gal-let{
     display: flex;
@@ -260,6 +348,7 @@ header{
     transition: all .2s;
     color: red;
 }
+
 /*FOOTER*/
 footer{
     position: fixed;
@@ -268,6 +357,8 @@ footer{
     display: flex;
     justify-content: end;
     bottom: 0;
+    transform: translateX(100px);
+    animation: slideDown .6s ease-out forwards;
 }
 .footer-container{
     display: flex;
@@ -287,7 +378,10 @@ footer{
     transition: .2s;
     margin-right: 80px;
 }
-.item-footer:hover{
+@keyframes slideLeft {
+    to {
+      transform: translateX(0);
+    }
 }
 
 /*ABOUT*/

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/popups.css">
     <link rel="stylesheet" href="assets/css/carrusel.css">
     <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
-    <script src="assets/js/funcionts.js"></script>
     
 </head>
 <body>
@@ -90,15 +89,17 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo distinctio assumenda vel illo ipsa molestias, error aspernatur </p>
             </div>
             <div class="gallery-img">
-                <section class="sec-bac">
-                    <img src="assets/img/img-gal-1.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-2.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-3.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-4.jpeg" alt="tic ltda">
-                    <img src="assets/img/img-gal-5.jpg" alt="tic ltda">
-                </section>
+                <div class="gal-box-1">
+                    <img src="assets/img/img-gal-1.jpg" id="img__1" class="img-1" alt="tic ltda">
+                    <img src="assets/img/img-gal-2.jpg" id="img__2" class="img-2" alt="tic ltda">
+                    <img src="assets/img/img-gal-3.jpg" id="img__3" class="img-3" alt="tic ltda">
+                </div>
+                <div class="gal-box-2">
+                    <img onclick="ani_img_1()" src="assets/img/img-gal-1.jpg" id="img__1__min" class="img-1-min" alt="tic ltda">
+                    <img onclick="ani_img_2()" src="assets/img/img-gal-2.jpg" id="img__2__min" class="img-2-min" alt="tic ltda">
+                    <img onclick="ani_img_3()" src="assets/img/img-gal-3.jpg" id="img__3__min" class="img-3-min" alt="tic ltda">
+                </div>
             </div>
-            
         </div>
     </div>
     
@@ -113,4 +114,6 @@
         </div>
     </footer>
 </body>
+<script src="assets/js/funcionts.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
