@@ -1,0 +1,19 @@
+/*ESTILOS GENERALES*/
+:root{
+    --color-principal:#FFFFFF;
+    --primary-color-logo:#BD0605;
+    --secundary-color-logo:#D7D7D7;
+
+    --color-background: #f2f7f9;
+    --transparent-color: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-tittle: #222222;
+    --color-subtitle: #888;
+    --color-text: #555;
+}
+
+/*Estilos Generales*/
+html{
+    font-size: 10px; /*toda la pagina quivalente a 10px para 1 rem*/
+}
