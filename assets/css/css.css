@@ -39,10 +39,11 @@ header{
     width: 100px;
     cursor: pointer;
 }
+
 .header-container a{
-    margin-left: 15px;
+    margin-left: 4em;
     transition: 0.2s;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #c90000;
 }
 .header-container a:hover{
@@ -81,11 +82,11 @@ header{
 }
 .main-title h1{
     color: #c90000;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 .main-title h2{
     color: #c90000;
-    font-size: 4.2rem;
+    font-size: 4.5rem;
 }
 #span-dinamico {
     display: inline-block;
@@ -179,19 +180,19 @@ header{
     transform: scale(1.45);
 }
 .serv-head h1{
-    font-size: 1rem;
+    font-size: 1.5rem;
     
 }
 .serv-body{
     text-align: left;
 }
 .serv-body p{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin: 10px;
     max-width: 260px;
 }
 .nue-serv-title{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 80px;
     user-select: none;
     color: white;
@@ -260,6 +261,10 @@ header{
     transition: all .2s;
     color: red;
 }
+
+.gallery__content{
+    font-size: 1.5rem;
+}
 /*FOOTER*/
 footer{
     position: fixed;
@@ -292,8 +297,8 @@ footer{
 
 /*ABOUT*/
 .about__presentation{
-    width: 89%;
-    margin: 7rem;
+    width: 90%;
+    margin: 9rem;
     display: flex;
     flex-direction: row;
 }
@@ -308,17 +313,21 @@ footer{
 .about__content {
     display: flex;
     flex-direction: row;
-    width: 57%;
-    gap: 4rem;
+    width: 90%;
+    gap: 3rem;
     padding: 4rem 23rem;
     justify-items: center;
     justify-content: space-between;
 }
 
+.about__title{
+    font-size: 3rem;
+}
+
 .about__explain p {
     line-height: 1.8;
     margin-bottom: 1.5rem; 
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-align: justify;
     color: #333; 
 }
@@ -336,7 +345,34 @@ footer{
 }
 
 .about__imagen-concrect{
-    
+    width: 40rem;
+}
+
+.content__mission-vission{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+}
+
+.content__mission,
+.content__vission{
+    width: 50%;
+}
+
+.mission__title,
+.vission__title{
+    width: 100%;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.mission__explain,
+.vission__explain{
+    text-align: justify;
+    font-size: 1.3rem;
 }
 
 
