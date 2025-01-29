@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/popups.css">
     <link rel="stylesheet" href="assets/css/carrusel.css">
     <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
-    <script src="assets/js/funcionts.js"></script>
     
 </head>
 <body>
@@ -47,13 +46,19 @@
     <!--NUESTROS SERVICIOS-->
     <section class="nuestros-servicios" id="servicios">
         <div class="nue-serv-title">
-            <h1>NUESTROS SERVICIOS</h1>
+            <h1>SERVICIOS Y ALIADOS</h1>
         </div>
         <div class="nue-ser-con">
             <div class="nue-serv-item">
                 <div class="serv-head">
-                    <i class="fa-solid fa-scissors fa-xl"></i>
-                    <h1>Suspencion y reconexion desde acometida.</h1>
+                    <div class="serv-icon">
+                        <div class="icon-shadow">
+                            <i class="fa-solid fa-splotch"></i>
+                        </div>
+                        <i class="fa-solid fa-scissors fa-xl"></i>
+                    </div>
+                    
+                    <h2>Suspencion y reconexion desde acometida.</h2>
                 </div>
                 <div class="serv-body">
                     <p>Suspendemos y reconectamos desde acometida con rapidez y precisión para garantizar la continuidad del servicio.</p>
@@ -63,8 +68,14 @@
 
             <div class="nue-serv-item">
                 <div class="serv-head">
-                    <i class="fa-solid fa-truck-fast fa-xl"></i>
-                    <h1>Mensajeria expresa</h1>
+                    <div class="serv-icon">
+                        <div class="icon-shadow">
+                            <i class="fa-solid fa-splotch"></i>
+                        </div>
+                        <i class="fa-solid fa-truck-fast fa-xl"></i>
+                    </div>
+                    
+                    <h2>Mensajeria expresa</h2>
                 </div>
                 <div class="serv-body">
                     <p>Somos agiles para que tu paquete llegue en tiempo record!</p>
@@ -75,11 +86,30 @@
 
             <div class="nue-serv-item">
                 <div class="serv-head">
+                    <div class="serv-icon">
+                        <div class="icon-shadow">
+                            <i class="fa-solid fa-splotch"></i>
+                        </div>
                     <i class="fa-solid fa-scissors fa-xl"></i>
-                    <h1>Suspencion y reconexion desde medicion</h1>
+                    </div>
+                    <h2>Suspencion y reconexion desde medicion</h2>
                 </div>
                 <div class="serv-body">
                     <p>Gestionamos con precisión y rapidez la suspensión o reconexión de servicios desde el centro de medición.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aliados">
+            <div class="aliados-container">
+                <div class="aliados-item">
+                    <img src="assets/img/logo-gas-car.png" alt="gases del caribe">
+                </div>
+                <div class="aliados-item">
+                    <img src="assets/img/logo-fedex.png" alt="fedex logo">
+                </div>
+                <div class="aliados-item">
+                    <img src="assets/img/logo-gas-gua.png" alt="gases de la guajira">
                 </div>
             </div>
         </div>
@@ -95,19 +125,21 @@
                 <p class="gallery__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo distinctio assumenda vel illo ipsa molestias, error aspernatur </p>
             </div>
             <div class="gallery-img">
-                <section class="sec-bac">
-                    <img src="assets/img/img-gal-1.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-2.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-3.jpg" alt="tic ltda">
-                    <img src="assets/img/img-gal-4.jpeg" alt="tic ltda">
-                    <img src="assets/img/img-gal-5.jpg" alt="tic ltda">
-                </section>
+                <div class="gal-box-1">
+                    <img src="assets/img/img-gal-1.jpg" id="img__1" class="img-1" alt="tic ltda">
+                    <img src="assets/img/img-gal-2.jpg" id="img__2" class="img-2" alt="tic ltda">
+                    <img src="assets/img/img-gal-3.jpg" id="img__3" class="img-3" alt="tic ltda">
+                </div>
+                <div class="gal-box-2">
+                    <img onclick="ani_img_1()" src="assets/img/img-gal-1.jpg" id="img__1__min" class="img-1-min" alt="tic ltda">
+                    <img onclick="ani_img_2()" src="assets/img/img-gal-2.jpg" id="img__2__min" class="img-2-min" alt="tic ltda">
+                    <img onclick="ani_img_3()" src="assets/img/img-gal-3.jpg" id="img__3__min" class="img-3-min" alt="tic ltda">
+                </div>
             </div>
-            
         </div>
     </div>
     
-    <!---->
+    <!-- ARREGLAR (NO DEBE SER FOOTER)
     <footer id="footer">
         <div class="footer-container">
             <div class="footer-box2">
@@ -117,5 +149,78 @@
             </div>
         </div>
     </footer>
+    -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-boxes">
+                <div class="footer-box footer-box-1">
+                    <div class="footer-head">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer-body">
+                        <p>
+                            Reconocidos por nuestros clientes actuales y potenciales a nivel nacional, 
+                            como una empresa líder en el sector en la prestación de nuestros servicios.
+                        </p>
+                    </div>
+                    <div class="footer-bottom">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-2">
+                    <div class="footer-head">
+                        <h2>Sucursales</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="footer-body-item">
+                            <h3>BARRANQUILLA</h3>
+                            <p>Dirección: CRA 61 # 58-79</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>SANTA MARTA</h3>
+                            <p>Dirección: CRA 17 # 11D-21</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>VALLEDUPAR</h3>
+                            <p>Dirección: Calle 14 # 7-92</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-3">
+                    <div class="footer-head">
+                        <h2>Contáctanos</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>CRA 61 # 58-79</p>
+                                <p>Norte Centro Histórico, Barrio Bella Vista</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+57 311 4297746</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
+<script src="assets/js/funcionts.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
