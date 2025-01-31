@@ -1,21 +1,65 @@
 .main__politicas{
     display: flex;
+    margin: 7rem
+}
+
+.politicas__content{
     justify-content: center;
-    width: 40rem;
-    min-height: 100vh;
-    align-items: center;
+    justify-items: center;
+    margin: 8rem;
+}
+
+.politicas__title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: var(--primary-color-logo);
+    padding: 3rem;
 }
 
 .politicas__contain{
-    width: 13rem;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
 .politica__item{
-    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    padding: 1rem;
+    border: 0.5px solid var(--secundary-color-logo);
+    border-radius: 3px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.politica__link{
+    justify-content: center;
+    justify-items: center;
 }
 
 .politica__image{
+    width: 70%;
+    padding: 1rem;
+}
 
+
+.gallery__tittle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    color: var(--color-tittle);
+    padding: 1rem;
+    
+    
+    
 }
