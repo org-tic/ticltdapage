@@ -11,6 +11,10 @@
     --color-tittle: #222222;
     --color-subtitle: #888;
     --color-text: #555;
+
+    --color-base: #c90000;
+    --color-base-hover-light: #e00000;
+    --color-base-hover-dark: #c00000;
 }
 
 /*Estilos Generales*/

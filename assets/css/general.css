@@ -1,0 +1,156 @@
+/*ESTILOS GENERALES DE ELEMENTOS REPETIDOS
+EN TODAS LAS PAGINAS, PARA LA REUTILIZACION DE CODIGO
+*//* HEADER - FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html{
+    scroll-behavior: smooth;
+    font-family: "Open Sans", serif;
+    overflow-x: hidden
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+*  {
+    margin: 0;
+    padding: 0;
+}
+* a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+
+
+
+/*HEADER*/
+header{
+    position: absolute;
+    min-width: 100%;
+    z-index: 100;
+    transform: translateY(-100%);
+    animation: slideDown .6s ease-out forwards;
+} 
+/*ANIMACION AL CARGAR LA PAGINA*/
+@keyframes slideDown {
+    to {
+      transform: translateY(0);
+    }
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+    user-select: none;
+    align-items: center;
+}
+.header-title img{
+    width: 10rem;
+    cursor: pointer;
+}
+
+.header-container a{
+    margin-left: 2em;
+    transition: .1s;
+    font-size: 1.5rem;
+    color: #c90000;
+}
+.header-container a:hover{
+    transform: scale(1.03);
+}
+.header-container a:active{
+    transform: scale(1);
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    background: url(../svg/bg-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    color: white;
+    padding-top: 230px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    view-timeline-name: --reveal;
+    animation-name: aniScrollFooter;
+    animation-fill-mode: backwards;
+    animation-timeline: --reveal;
+    animation-range: entry 1% cover 30%;
+}
+@keyframes aniScrollFooter{
+    from{
+        transform: translateY(-100px);
+    }
+}
+.footer-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.footer-box-1 {
+    text-align: left;
+}
+
+.footer-box-1 i {
+    font-size: 50px;
+    color: white;
+}
+
+.footer-box-1 p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+}
+
+.footer-bottom a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-box-2 {
+    text-align: left;
+}
+
+.footer-box-2 .footer-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-body-item h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-body-item p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-box-3 {
+    text-align: left;
+}
