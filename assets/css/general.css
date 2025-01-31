@@ -87,7 +87,7 @@ footer {
     animation-timeline: --reveal;
     animation-range: entry 1% cover 30%;
 }
-@keyframes aniScrollFooter{
+@keyframes 'aniScrollFooter'{
     from{
         transform: translateY(-100px);
     }
