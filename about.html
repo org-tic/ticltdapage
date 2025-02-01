@@ -12,23 +12,37 @@
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
-    <script src="assets/js/funcionts.js"></script>
     
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="header-container">
             <div class="header-title">
                 <img src="assets/img/tic-logo.png" alt="">
             </div>
-            <div class="header-items">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="header-items">
                 <a href="index.html">Inicio</a>
-                <a href="about.html">Sobre Nosotros</a>
-                <a href="service.html">Servicios</a>
+                <div class="drop">
+                    <a  onclick="aniToggle1()" href="about.html" class="drop-toggle">Sobre Nosotros <i id="iconToggle1" class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="drop-menu">
+                        <li><a href="mision.html">Misión y Visión</a></li>
+                        <li><a href="politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+                <div class="drop">
+                    <a onclick="aniToggle2()" href="service.html" class="drop-toggle">Servicios <i id="iconToggle2" class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="drop-menu">
+                        <li><a href="">Suspension y reconexion</a></li>
+                        <li><a href="">Mensajeria expresa</a></li>
+                    </ul>
+                </div>
                 <a href="#home">PQR</a>
-                <a href="#about">Contactanos</a>
+                <a href="#about">Contáctanos</a>
                 <a href="#about">Portal Corporativo</a>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -87,4 +101,5 @@
     </footer>
 
 </body>
+<script src="assets/js/script.js"></script>
 </html>
