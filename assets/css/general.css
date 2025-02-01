@@ -81,17 +81,8 @@ footer {
 .footer-container {
     width: 90%;
     max-width: 1200px;
-    view-timeline-name: --reveal;
-    animation-name: aniScrollFooter;
-    animation-fill-mode: backwards;
-    animation-timeline: --reveal;
-    animation-range: entry 1% cover 30%;
 }
-@keyframes 'aniScrollFooter'{
-    from{
-        transform: translateY(-100px);
-    }
-}
+
 .footer-boxes {
     display: flex;
     justify-content: space-between;
