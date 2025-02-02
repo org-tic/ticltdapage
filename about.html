@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/points.css">
-    <link rel="stylesheet" href="assets/css/css.css">
-    <link rel="stylesheet" href="assets/css/popups.css">
-    <link rel="stylesheet" href="assets/css/carrusel.css">
-    <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="header-title">
-                <img src="assets/img/tic-logo.png" alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--Normalizando css-->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/points.css">
+        <link rel="stylesheet" href="assets/css/css.css">
+        <link rel="stylesheet" href="assets/css/popups.css">
+        <link rel="stylesheet" href="assets/css/carrusel.css">
+        <link rel="stylesheet" href="assets/css/general.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
+        <script src="assets/js/aos.js"></script>
+        <script>AOS.init();</script>
+    </head>
+    <body>
+        
+        <!--HEADER-->
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <img src="assets/img/tic-logo.png" alt="">
+                </div>
+                <button class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="header-items">
+                    <a href="index.html">Inicio</a>
+                    <div class="drop">
+                        <a  onclick="aniToggle1()" href="about.html" class="drop-toggle">Sobre Nosotros <i id="iconToggle1" class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="menu-1" class="drop-menu">
+                            <li><a href="about.html">Misión y Visión</a></li>
+                            <li><a href="politicas.html">Políticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop">
+                        <a onclick="aniToggle2()" href="service.html" class="drop-toggle">Servicios <i id="iconToggle2" class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="menu-2" class="drop-menu">
+                            <li><a href="">Suspension y reconexion</a></li>
+                            <li><a href="">Mensajeria expresa</a></li>
+                        </ul>
+                    </div>
+                    <a href="#home">PQR</a>
+                    <a href="#about">Contáctanos</a>
+                    <a href="#about">Portal Corporativo</a>
+                </nav>
             </div>
-            <button class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <nav class="header-items">
-                <a href="index.html">Inicio</a>
-                <div class="drop">
-                    <a  onclick="aniToggle1()" href="about.html" class="drop-toggle">Sobre Nosotros <i id="iconToggle1" class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="drop-menu">
-                        <li><a href="mision.html">Misión y Visión</a></li>
-                        <li><a href="politicas.html">Políticas</a></li>
-                    </ul>
-                </div>
-                <div class="drop">
-                    <a onclick="aniToggle2()" href="service.html" class="drop-toggle">Servicios <i id="iconToggle2" class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="drop-menu">
-                        <li><a href="">Suspension y reconexion</a></li>
-                        <li><a href="">Mensajeria expresa</a></li>
-                    </ul>
-                </div>
-                <a href="#home">PQR</a>
-                <a href="#about">Contáctanos</a>
-                <a href="#about">Portal Corporativo</a>
-            </nav>
-        </div>
-    </header>
+        </header>
 
     <main class="about__presentation">
         <section class="presentation__content">
 
             <div class="content__about">
-                <h2 class="about__title">Sobre nosotros</h2>
                 <div class="about__content">
                     <div class="about__explain">
+                        <h2 class="about__title">Sobre nosotros</h2>
                         <p>
-                            TIC LTDA. Constituida en Barranquilla el 29 de Enero de 1986, obtuvo la Licencia del Ministerio de Comunicaciones como Concesionario de Servicios Postales en Calidad de Mensajería Especializada a Nivel Nacional y en Conexión con el Exterior, mediante las Resoluciones Nos. 01091 de Abril 20/95 y 002748 de Noviembre 21 de 2005. La Resolución No. 01091 fue prorrogada mediante la Resolución No. 836 de Abril 12/2000.
-                            Mediante la Resolución 002547 de Diciembre 14/2010 el Ministerio de Tecnologías de la Información y las Comunicaciones otorgó la Licencia para prestar el Servicio Postal de Mensajería Expresa a Nivel NACIONAL, por el término de diez años, prorrogada con la Resolución N° 02379 de Noviembre 26/2020, Igualmente presta para Empresas de Servicios Públicos los servicios de Suspensión y Reconexión de servicio, y Suspensión y Reconexión desde Acometidas.
+                            TIC LTDA., fundada en Barranquilla el 29 de enero de 1986, obtuvo licencia del Ministerio de Comunicaciones para servicios postales de mensajería especializada. En 2010, recibió autorización para operar mensajería expresa a nivel nacional, renovada en 2020. También presta servicios de suspensión y reconexión de servicios públicos. Su sede principal está en Barranquilla con agencias en Cartagena, Sincelejo, Santa Marta, Valledupar, Pereira, Armenia y Manizales. Cuenta con certificación ISO 45001:2018 en seguridad y salud laboral y un plan ambiental interno.
                         </p>
                         <p>
                             El domicilio principal es en la ciudad de Barranquilla, en la Carrera 61 No. 58-79, con agencias autorizadas en las ciudades de Cartagena, Sincelejo, Santa Marta, Valledupar, Pereira, Armenia y Manizales.
@@ -70,22 +74,20 @@
                 </div>
             </div>
 
-            <div class="content__mission-vission">
-                <div class="content__mission">
+            <div class="content__mission-vission" data-aos="fade-up" >
+                <div class="content__mission box">
                     <h3 class="mission__title">Mision</h3>
                     <p class="mission__explain">
-                        Somos una empresa dedicada a prestar un servicio integral, seguro y diferenciado de mensajería expresa masiva, a quienes necesitan llegar física y oportunamente a predios urbanos y rurales, para desplegar una actividad,  como lectura de medidores de  consumo de servicios públicos, suspensión y    reconexión del servicio, o 
-
-                        entregar documentos o facturas de servicios públicos, que agregue valor al cliente y le cumpla al destinatario final, con personal competente y comprometido, garantizando su satisfacción, procediendo con sentido ético y de acuerdo con la ley y generando beneficios sociales a los trabajadores y accionistas.
+                        Ofrecemos un servicio seguro y diferenciado de mensajería expresa para clientes que necesitan llegar de forma oportuna a zonas urbanas y rurales. Realizamos lectura de medidores, suspensión y reconexión de servicios, y entrega de documentos con personal competente, actuando de forma ética y generando beneficios sociales.
                     </p>
                     <div class="mission__image">
                         <img >
                     </div>
                 </div>
-                <div class="content__vission">
+                <div data-aos="fade-up" class="content__vission box">
                     <h3 class="vission__title">Vision</h3>
                     <p class="vission__explain">
-                        Ser reconocidos por nuestros clientes actuales y potenciales a nivel nacional, como una empresa líder en el sector en la prestación de nuestros servicios, con tecnología y sistemas de información apropiados a la altura de las operaciones, con un equipo humano comprometido con el propósito de la organización.
+                        Ser reconocidos a nivel nacional como empresa líder en mensajería expresa, con tecnología avanzada y un equipo humano comprometido con la excelencia.
                     </p>
                     <div class="mission__image">
                         <img >
@@ -96,8 +98,69 @@
         
     </main>
 
-    <footer class="footer">
-        
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-boxes" data-aos="fade-up">
+                <div class="footer-box footer-box-1">
+                    <div class="footer-head">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer-body">
+                        <p>
+                            Reconocidos por nuestros clientes actuales y potenciales a nivel nacional, 
+                            como una empresa líder en el sector en la prestación de nuestros servicios.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-2">
+                    <div class="footer-head">
+                        <h2>Sucursales</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="footer-body-item">
+                            <h3>BARRANQUILLA</h3>
+                            <p>Dirección: CRA 61 # 58-79</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>SANTA MARTA</h3>
+                            <p>Dirección: CRA 17 # 11D-21</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>VALLEDUPAR</h3>
+                            <p>Dirección: Calle 14 # 7-92</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-3">
+                    <div class="footer-head">
+                        <h2>Contáctanos</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>CRA 61 # 58-79</p>
+                                <p>Norte Centro Histórico, Barrio Bella Vista</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+57 311 4297746</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

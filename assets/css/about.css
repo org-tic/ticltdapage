@@ -1,80 +1,116 @@
-
-/*ABOUT*/
-.about__presentation{
-    width: 90%;
-    margin: 9rem;
+/* ABOUT */
+.about__presentation {
+    width: 85%;
+    margin: 5rem auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
 }
 
-.content__about{
+.content__about {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: 1s loadAni;
+}
+@keyframes loadAni{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
+.about__title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .about__content {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     gap: 3rem;
-    padding: 4rem 23rem;
-    justify-items: center;
+    align-items: center;
     justify-content: space-between;
 }
 
-.about__title{
-    font-size: 3rem;
+.about__explain {
+    flex: 1;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.8;
 }
 
 .about__explain p {
-    line-height: 1.8;
-    margin-bottom: 1.5rem; 
-    font-size: 1.5rem;
-    text-align: justify;
-    color: #333; 
+    margin-bottom: 1.2rem;
 }
 
 .about__explain p:first-of-type {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.about__explain p:last-of-type {
-    margin-bottom: 0; 
-}
-
-.about__img{
-    width: 100%;
-}
-
-.about__imagen-concrect{
-    width: 40rem;
-}
-
-.content__mission-vission{
-    margin-top: 3rem;
-    width: 100%;
+.about__img {
+    flex: 1;
     display: flex;
-    gap: 5rem;
+    justify-content: center;
 }
-
-.content__mission,
-.content__vission{
-    width: 50%;
+.about__img img{
+    height: 530px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-
-.mission__title,
-.vission__title{
+.about__imagen-concrect {
     width: 100%;
-    justify-content: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
+    max-width: 500px;
 }
 
-.mission__explain,
-.vission__explain{
+.content__mission-vission {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.content__mission, 
+.content__vission {
+    flex: 1;
+    text-align: center;
+}
+
+.mission__title, 
+.vission__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mission__explain, 
+.vission__explain {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.box{
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+.box h3{
+    text-align: center;
+}
+.box p{
+    text-align: left;
 }

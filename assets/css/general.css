@@ -80,7 +80,7 @@ header {
     background: white;
     list-style: none;
     z-index: 99;
-    width: 100px;
+    width: 200px;
     transition: .2s;
     padding-left: 5px;
 }
@@ -128,6 +128,9 @@ header {
     }
     .drop-menu.active {
         display: block;
+    }
+    .footer-container{
+        margin-top: 200px;
     }
 }
 
