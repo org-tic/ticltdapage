@@ -1,46 +1,45 @@
-// variables para las imágenes grandes y miniaturas
-const imgs = [
-    document.getElementById('img__1'),
-    document.getElementById('img__2'),
-    document.getElementById('img__3'),
-];
-const imgs_min = [
-    document.getElementById('img__1__min'),
-    document.getElementById('img__2__min'),
-    document.getElementById('img__3__min'),
-];
 
-// cambiar la imagen seleccionada
-function changeImage(selectedIndex) {
-    imgs.forEach((img, index) => {
-        if (index === selectedIndex) {
-            // imagen seleccionada pasa al centro
-            img.style.transform = 'translateX(0) scale(1)';
-            img.style.opacity = '1';
-            img.style.zIndex = '100';
-        } else if ((index + 1) % 3 === selectedIndex) {
-            // imagen de la izquierda
-            img.style.transform = 'translateX(-200px) scale(0.8)';
-            img.style.opacity = '0.8';
-            img.style.zIndex = '1';
-        } else {
-            // imagen de la derecha
-            img.style.transform = 'translateX(200px) scale(0.8)';
-            img.style.opacity = '0.8';
-            img.style.zIndex = '1';
+// HEADER RESPONSIVE
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".header-items");
+    const dropdownToggles = document.querySelectorAll(".drop-toggle");
+    
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+    
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const dropMenu = this.nextElementSibling;
+            dropMenu.classList.toggle("active");
+        });
+    });
+    
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 820) {
+            menu.classList.remove("active");
         }
     });
-
-    imgs_min.forEach((mini, index) => {
-        if (index === selectedIndex) {
-            mini.classList.add('img_active');
-        } else {
-            mini.classList.remove('img_active');
-        }
-    });
-}
-
-// Asignar eventos a las miniaturas
-imgs_min.forEach((mini, index) => {
-    mini.onclick = () => changeImage(index);
 });
+
+// ANIMACION ICON NAV AL TOGGLE
+function aniToggle1(){
+    let iconToggle1 = document.getElementById('iconToggle1')
+
+    if (!iconToggle1.classList.contains('vuelta') ) {
+            iconToggle1.classList.add('vuelta')
+    }else{
+        iconToggle1.classList.remove('vuelta')
+    }
+}
+function aniToggle2(){
+    let iconToggle2 = document.getElementById('iconToggle2')
+
+    if (!iconToggle2.classList.contains('vuelta') ) {
+            iconToggle2.classList.add('vuelta')
+    }else{
+        iconToggle2.classList.remove('vuelta')
+    }
+}

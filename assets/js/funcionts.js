@@ -17,22 +17,6 @@ document.getElementById("span-dinamico").textContent = palabras[indiceActual];
 
 
 
-// ABRIR Y CERRAR POP UPS
-
-var abrirpop1 = document.getElementById("sus_med");
-var cerrarpop1 = document.getElementById("sus_med");
-
-function abrir_pop1(){
-    abrirpop1.style.top = "10%";
-    document.body.style.overflow = 'hidden';
-}
-
-function cerrar_pop1(){
-    cerrarpop1.style.top = "-100%";
-    document.body.style.overflow = 'visible';
-}
-
-
 // HORA EN TIEMPO REAL PHONE
 function updateTime() {
     const now = new Date();
@@ -48,3 +32,4 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 updateTime();
+
