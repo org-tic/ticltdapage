@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="assets/css/popups.css">
     <link rel="stylesheet" href="assets/css/carrusel.css">
     <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
-    
+    <script src="assets/js/aos.js"></script>
+    <script>AOS.init();</script>
 </head>
 <body>
     
@@ -29,14 +31,14 @@
                 <a href="index.html">Inicio</a>
                 <div class="drop">
                     <a  onclick="aniToggle1()" href="about.html" class="drop-toggle">Sobre Nosotros <i id="iconToggle1" class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="drop-menu">
+                    <ul id="menu-1" class="drop-menu">
                         <li><a href="mision.html">Misión y Visión</a></li>
                         <li><a href="politicas.html">Políticas</a></li>
                     </ul>
                 </div>
                 <div class="drop">
                     <a onclick="aniToggle2()" href="service.html" class="drop-toggle">Servicios <i id="iconToggle2" class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="drop-menu">
+                    <ul id="menu-2" class="drop-menu">
                         <li><a href="">Suspension y reconexion</a></li>
                         <li><a href="">Mensajeria expresa</a></li>
                     </ul>
@@ -52,8 +54,7 @@
     <main class="main-index">
         <div class="main-container">
             <div class="main-title">
-                <h1>Somos </h1>
-                <h2 class="main-tit-item"> TIC!</h2>
+                <h2 id="title-ani">Somos <span class="">TIC!</span> </h2>
             </div>
             <div class="main-par">
                 <p><span id="span-dinamico">Somos Lideres!</span></p>
@@ -67,7 +68,7 @@
                 <h1>SERVICIOS Y ALIADOS</h1>
             </div>
             <div class="nue-ser-con">
-                <div class="nue-serv-item">
+                <div class="nue-serv-item"  data-aos="fade-up">
                     <div class="serv-head">
                         <div class="serv-icon">
                             <div class="icon-shadow">
@@ -84,7 +85,7 @@
                 </div>
                 
     
-                <div class="nue-serv-item">
+                <div class="nue-serv-item" data-aos="fade-up">
                     <div class="serv-head">
                         <div class="serv-icon">
                             <div class="icon-shadow">
@@ -102,7 +103,7 @@
                 
     
     
-                <div class="nue-serv-item">
+                <div class="nue-serv-item" data-aos="fade-up">
                     <div class="serv-head">
                         <div class="serv-icon">
                             <div class="icon-shadow">
@@ -117,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="aliados">
+            <div class="aliados" data-aos="fade-up">
                 <div class="aliados-container">
                     <div class="aliados-item">
                         <img src="assets/img/logo-gas-car.png" alt="gases del caribe">
@@ -137,7 +138,7 @@
     <section class="contact-break">
         <div class="break-container">
             <div class="break-items">
-                <div class="break-item-1">
+                <div class="break-item-1" data-aos="fade-right">
                     <h2>Contactanos</h2>
                     <p>Puedes comunicarte con nosotros a través de WhatsApp, llamada, correo electrónico o visitando nuestras oficinas.</p>
                     <p>Tambien puedes dar clic en el mapas, para ver la ubicacion exacta de cada una de nuestras sedes!</p><br>
@@ -149,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="break-item-2">
+                <div class="break-item-2" data-aos="fade-left">
                     <div class="phone">
                         <span class="top-border"></span>
                         
@@ -195,7 +196,7 @@
     <!--FOOTER-->
     <footer>
         <div class="footer-container">
-            <div class="footer-boxes">
+            <div class="footer-boxes" data-aos="fade-up">
                 <div class="footer-box footer-box-1">
                     <div class="footer-head">
                         <i class="fa-solid fa-globe"></i>

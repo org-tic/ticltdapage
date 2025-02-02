@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+});
+
 
 // HEADER RESPONSIVE
 document.addEventListener("DOMContentLoaded", function () {
@@ -7,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     menuToggle.addEventListener("click", function () {
         menu.classList.toggle("active");
+        document.body.style.overflow = 'hidden';
     });
     
     dropdownToggles.forEach(toggle => {

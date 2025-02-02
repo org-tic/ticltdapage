@@ -64,7 +64,11 @@ header {
     display: flex;
     gap: 15px;
 }
-
+.header-items a{
+    font-size: 1.5rem;
+    color: var(--color-base);
+    font-weight: 500;
+}
 .drop {
     position: relative;
     display: inline-block;
@@ -76,8 +80,18 @@ header {
     background: white;
     list-style: none;
     z-index: 99;
+    width: 100px;
+    transition: .2s;
+    padding-left: 5px;
 }
-
+.drop-menu a{
+    margin: 5px 0px;
+    transition: .2s;
+}
+.drop-menu a:hover{
+    color: var(--color-base-hover-dark);
+    transform: translateX(5px);
+}
 .drop-menu.active {
     display: block;
 }
@@ -138,17 +152,8 @@ footer {
 .footer-container {
     width: 90%;
     max-width: 1200px;
-    view-timeline-name: --reveal;
-    animation-name: aniScrollFooter;
-    animation-fill-mode: backwards;
-    animation-timeline: --reveal;
-    animation-range: entry 1% cover 30%;
 }
-@keyframes aniScrollFooter{
-    from{
-        transform: translateY(-100px);
-    }
-}
+
 .footer-boxes {
     display: flex;
     justify-content: space-between;
