@@ -13,8 +13,8 @@
     --color-text: #555;
 
     --color-base: #c90000;
-    --color-base-hover-light: #e00000;
-    --color-base-hover-dark: #c00000;
+    --color-base-light: #e00000;
+    --color-base-dark: #c00000;
 }
 
 /*Estilos Generales*/
