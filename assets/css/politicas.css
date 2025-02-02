@@ -1,9 +1,11 @@
-.main__politicas{
+.main__politicas,
+.main__pqr{
     display: flex;
     margin: 7rem
 }
 
-.politicas__content{
+.politicas__content,
+.content__pqr{
     justify-content: center;
     justify-items: center;
     margin: 8rem;
@@ -61,5 +63,26 @@
     padding: 1rem;
     
     
+    
+}
+
+.politicas__description{
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0 33rem;
+    margin-bottom: 3rem;
+
+}
+
+/*PQR*/
+
+
+
+.pqr__title{
+    font-size: 3.2rem;
     
 }
