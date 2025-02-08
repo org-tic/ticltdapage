@@ -26,12 +26,13 @@ body{
 
 
 header {
-    position: absolute;
+    position: relative;
     min-width: 100%;
     z-index: 100;
     transform: translateY(-100%);
     animation: slideDown .6s ease-out forwards;
     background: #fff;
+    margin-bottom: 3rem;
 }
 
 @keyframes slideDown {
@@ -44,11 +45,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1.1rem 8rem;
 }
 
 .header-title img {
-    width: 10rem;
+    width: 12rem;
     cursor: pointer;
 }
 
@@ -62,7 +63,7 @@ header {
 
 .header-items {
     display: flex;
-    gap: 15px;
+    gap: 3.5rem;
 }
 .header-items a{
     font-size: 1.5rem;
