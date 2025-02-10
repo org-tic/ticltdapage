@@ -61,12 +61,13 @@
     text-align: center;
     color: var(--color-tittle);
     padding: 1rem;    
+    
 }
 
 .politicas__description{
     width: 100%;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     justify-content: center;
     justify-items: center;
     text-align: center;

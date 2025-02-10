@@ -136,7 +136,7 @@
 .pqr__documentation{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 55%;
     justify-content: center;
     justify-items: center;
     margin-top: 10rem;
@@ -154,13 +154,47 @@
 
 .documentation__contain{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-evenly;
     justify-items: center;
     width: 100%;
+    margin-top: 2rem;
+    
 }
 
 .documentation__item{
     display: flex;
     flex-direction: column;
-    width: 45% ;
+    flex-basis: 25%;
+    border: 0.5px solid var(--secundary-color-logo);
+    border-radius: 3px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.documentation__container-image,
+.documentation__link{
+    justify-content: center;
+    justify-items: center;
+}
+
+.documentation__image{
+    width: 70%;
+    padding: 1rem;
+}
+
+.documentation__subtitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    align-items: center;
+    text-align: center;
+    color: var(--color-tittle);
+    border-top: 0.5px solid var(--primary-color-logo);
+    padding-top: 0.5rem;
 }
