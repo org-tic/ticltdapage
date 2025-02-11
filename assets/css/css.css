@@ -359,7 +359,7 @@
     transform: translateY(-1px);
   }
   .phone-footer:hover{
-      background-color: var(--color-base-hover-light);
+      background-color: var(--color-base-light);
   }
 .contact-item {
     display: flex;

@@ -93,7 +93,7 @@ header {
     color: var(--color-base-hover-dark);
     transform: translateX(5px);
 }
-.drop-menu.active {
+.drop:hover .drop-menu {
     display: block;
 }
 

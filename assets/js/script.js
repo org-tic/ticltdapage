@@ -30,21 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ANIMACION ICON NAV AL TOGGLE
-function aniToggle1(){
-    let iconToggle1 = document.getElementById('iconToggle1')
+document.addEventListener("DOMContentLoaded", function () {
+    const iconToggle1 = document.getElementById("iconToggle1");
+    const iconToggle2 = document.getElementById("iconToggle2");
 
-    if (!iconToggle1.classList.contains('vuelta') ) {
-            iconToggle1.classList.add('vuelta')
-    }else{
-        iconToggle1.classList.remove('vuelta')
-    }
-}
-function aniToggle2(){
-    let iconToggle2 = document.getElementById('iconToggle2')
+    const drop1 = document.querySelector(".drop:nth-of-type(1)"); // Primer menú desplegable
+    const drop2 = document.querySelector(".drop:nth-of-type(2)"); // Segundo menú desplegable
 
-    if (!iconToggle2.classList.contains('vuelta') ) {
-            iconToggle2.classList.add('vuelta')
-    }else{
-        iconToggle2.classList.remove('vuelta')
+    function addRotation(icon) {
+        icon.classList.add("vuelta");
     }
-}
+
+    function removeRotation(icon) {
+        icon.classList.remove("vuelta");
+    }
+
+    drop1.addEventListener("mouseenter", () => addRotation(iconToggle1));
+    drop1.addEventListener("mouseleave", () => removeRotation(iconToggle1));
+
+    drop2.addEventListener("mouseenter", () => addRotation(iconToggle2));
+    drop2.addEventListener("mouseleave", () => removeRotation(iconToggle2));
+});
