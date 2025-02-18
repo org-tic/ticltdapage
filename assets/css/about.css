@@ -97,10 +97,17 @@
 
 .mission__explain, 
 .vission__explain {
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
     font-size: 1.5rem;
     line-height: 1.8;
+    padding: 1rem 2.2rem;
+    text-align: justify !important;
 }
+
+
 .box{
     max-width: 500px;
     background-color: white;
