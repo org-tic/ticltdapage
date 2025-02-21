@@ -9,7 +9,7 @@
 
 .pqr__container{
     width: 100%;
-    background-color: #939393;
+    background-color: white;
     padding: 3rem;
 }
 
@@ -124,8 +124,8 @@
     padding: 1rem 3rem;
     font-size: 1.5rem;
     border: 0.2rem solid var(--color-base);
+    background-color: white;
     color: var(--color-tittle);
-    background-color: #939393;
     border-radius: 3rem;
     box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.22);
     cursor: pointer;

@@ -1,0 +1,76 @@
+.main__contactanos{
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contactanos__containt{
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 7rem;
+}
+
+.contactanos__title{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color-logo);
+    text-align: center;
+}
+
+.contactanos__sucrusales{
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.sucursales__item{
+    flex-basis: 45rem;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin: 3rem;
+    
+}
+
+.sucursales__container-image{
+
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.sucursales__image{
+    width: 50rem;
+    height: 42rem;
+    transition: all 300ms ease-in-out;
+}
+
+.sucursales__image:hover {
+    transform: scale(1.1);
+    transform-origin: top right;
+}
+
+.sucursales__image-left{
+    width: 50rem;
+    height: 42rem;
+    transition: all 300ms ease-in-out;
+}
+
+.sucursales__image-left:hover{
+    transform: scale(1.1);
+}
+
+.sucursales__subtitle{
+    margin-top: 2rem;
+    color: var(--color-title);
+    font-size: 2.5rem;
+}
+
+.sucursales__data{
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
