@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--Normalizando css-->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/points.css">
+        <link rel="stylesheet" href="assets/css/css.css">
+        <link rel="stylesheet" href="assets/css/popups.css">
+        <link rel="stylesheet" href="assets/css/carrusel.css">
+        <link rel="stylesheet" href="assets/css/general.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/acomety.css">
+        <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
+        <script src="assets/js/aos.js"></script>
+        <script>AOS.init();</script>
+    </head>
+    <body>
+        
+        <!--HEADER-->
+        <header>
+            <div class="header-container">
+                <div class="header-title">
+                    <img src="assets/img/tic-logo.png" alt="">
+                </div>
+                <button class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="header-items">
+                    <a href="index.html">Inicio</a>
+                    <div class="drop">
+                        <a  onclick="aniToggle1()" href="about.html" class="drop-toggle">Sobre Nosotros <i id="iconToggle1" class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="menu-1" class="drop-menu">
+                            <li><a href="about.html">Misión y Visión</a></li>
+                            <li><a href="politicas.html">Políticas</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop">
+                        <a onclick="aniToggle2()" href="service.html" class="drop-toggle">Servicios <i id="iconToggle2" class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="menu-2" class="drop-menu">
+                            <li><a href="">Suspension y reconexion</a></li>
+                            <li><a href="mensajeria-expresa.html">Mensajeria expresa</a></li>
+                        </ul>
+                    </div>
+                    <a href="PQR.html">PQR</a>
+                    <a href="contactanos.html">Contáctanos</a>
+                </nav>
+            </div>
+        </header>
+
+    <main class="main__acomety">
+        <section class="acomety__content">
+            <header class="acomety__header">
+                <h1 class="acomety__title">Suspensión y reconexión desde centro de medición</h1>
+            </header>
+            <div class="content__info">
+                <div class="content__acomety-images">
+                    <img class="images" src="assets/img/img-gal-8.jpg" alt="trabajador">
+                    <img class="images" src="assets/img/img-gal-4.jpeg" alt="trabajador">
+                </div>
+                <div class="content__explain">
+                    <p class="acomety__explain">
+                        Realizar la reconexión del servicio público de gas natural por centro de 
+                        medición cumpliendo con los requisitos establecidos por el cliente, 
+                        con los procedimientos de calidad, seguridad y salud en el trabajo 
+                        de la empresa y usando los elementos de protección personal para 
+                        lograr un buen servicio y garantizar unas condiciones de trabajo seguras
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content__acomety--points">
+                <div class="acomety--points__images">
+                    <img class="images" src="assets/img/IMG_E8001-scaled.jpg" alt="trabajador">
+                </div>
+                <div class="acomety--points__explain">
+                    <uL class="acomety__list">
+                        <li class="acomety__item">
+                            <h3 class="acomety--points__subtitle">Enrutar:</h3>
+                            <p class="acomety--points__info">ordenar la ruta de trabajo, por predios, en forma consecutiva.</p>
+                        </li>
+                        <li class="acomety__item">
+                            <h3 class="acomety--points__subtitle">Reconexión:</h3>
+                            <p class="acomety--points__info">Procedimiento mediante el cual se desbloquean las acometidas de gases de los usuarios que se encontraban en mora..</p>
+                        </li>
+                        <li class="acomety__item">
+                            <h3 class="acomety--points__subtitle">Consola Administrativa:</h3>
+                            <p class="acomety--points__info">Aplicativo Web que permite interactuar con los datos del usuario en tiempo real y administrar las ordenes de trabajo (OT).</p>
+                        </li>
+                    </uL>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-boxes" data-aos="fade-up">
+                <div class="footer-box footer-box-1">
+                    <div class="footer-head">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer-body">
+                        <p>
+                            Reconocidos por nuestros clientes actuales y potenciales a nivel nacional, 
+                            como una empresa líder en el sector en la prestación de nuestros servicios.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-2">
+                    <div class="footer-head">
+                        <h2>Sucursales</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="footer-body-item">
+                            <h3>BARRANQUILLA</h3>
+                            <p>Dirección: CRA 61 # 58-79</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>SANTA MARTA</h3>
+                            <p>Dirección: CRA 17 # 11D-21</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                        <div class="footer-body-item">
+                            <h3>VALLEDUPAR</h3>
+                            <p>Dirección: Calle 14 # 7-92</p>
+                            <p>Teléfono: +57 311 4297746</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-box footer-box-3">
+                    <div class="footer-head">
+                        <h2>Contáctanos</h2>
+                    </div>
+                    <div class="footer-body">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>CRA 61 # 58-79</p>
+                                <p>Norte Centro Histórico, Barrio Bella Vista</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+57 311 4297746</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
