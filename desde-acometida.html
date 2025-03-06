@@ -52,47 +52,46 @@
 
     <main class="main__acomety">
         <section class="acomety__content">
-            <header class="acomety__header">
+            <header>
                 <h1 class="acomety__title">Suspensión y reconexión desde acometida</h1>
             </header>
+            <div class="content__explain">
+                <p class="acomety__explain">
+                    Realizar la reconexión del servicio público de gas natural por acometida 
+                    cumpliendo con los requisitos establecidos por el cliente, con los procedimientos 
+                    de calidad, seguridad y salud en el trabajo de la empresa y usando los elementos de 
+                    protección personal para lograr un buen servicio y garantizar unas condiciones de trabajo seguras.
+                </p>
+            </div>
             <div class="content__info">
-                <div class="content__acomety-images">
-                    <img class="images" src="assets/img/img-gal-5.jpg" alt="trabajador">
-                    <img class="images" src="assets/img/img-gal-3.jpg" alt="trabajador">
-                </div>
-                <div class="content__explain">
-                    <p class="acomety__explain">
-                        Realizar la reconexión del servicio público de gas natural por acometida 
-                        cumpliendo con los requisitos establecidos por el cliente, con los procedimientos 
-                        de calidad, seguridad y salud en el trabajo de la empresa y usando los elementos de 
-                        protección personal para lograr un buen servicio y garantizar unas condiciones de trabajo seguras.
-                    </p>
+                <div class="slider-container">
+                    <button id="prevBtn">&#10094;</button>
+                    <div class="slider">
+                        <img src="assets/img/img-gal-5.jpg" alt="trabajador" class="slide active">
+                        <img src="assets/img/img-gal-3.jpg" alt="trabajador" class="slide">
+                        <img src="assets/img/img-gal-6.jpg" alt="trabajador" class="slide">
+                    </div>
+                    <button id="nextBtn">&#10095;</button>
                 </div>
             </div>
-            
-            <div class="content__acomety--points">
-                <div class="acomety--points__images">
-                    <img class="images" src="assets/img/img-gal-6.jpg" alt="trabajador">
-                </div>
-                <div class="acomety--points__explain">
-                    <uL class="acomety__list">
-                        <li class="acomety__item">
-                            <h3 class="acomety--points__subtitle">Reconexión desde acometida:</h3>
-                            <p class="acomety--points__info">Procedimiento mediante el cual se retira el tapón de polietileno de la conexión de la red de gas que va al centro de medición.</p>
-                        </li>
-                        <li class="acomety__item">
-                            <h3 class="acomety--points__subtitle">Acometida:</h3>
-                            <p class="acomety--points__info">Conexión de la red de gas al centro de medición, a través de la tubería de polietileno.</p>
-                        </li>
-                        <li class="acomety__item">
-                            <h3 class="acomety--points__subtitle">Unión de Polietileno:</h3>
-                            <p class="acomety--points__info">Conector con un orificio de entrada y uno de salida.</p>
-                        </li>
-                    </uL>
-                </div>
+    
+            <div class="acomety--points__explain">
+                <ul class="acomety__list">
+                    <li class="acomety__item">
+                        <h3 class="acomety--points__subtitle">Reconexión desde acometida:</h3>
+                        <p class="acomety--points__info">Procedimiento mediante el cual se retira el tapón de polietileno de la conexión de la red de gas que va al centro de medición.</p>
+                    </li>
+                    <li class="acomety__item">
+                        <h3 class="acomety--points__subtitle">Acometida:</h3>
+                        <p class="acomety--points__info">Conexión de la red de gas al centro de medición, a través de la tubería de polietileno.</p>
+                    </li>
+                    <li class="acomety__item">
+                        <h3 class="acomety--points__subtitle">Unión de Polietileno:</h3>
+                        <p class="acomety--points__info">Conector con un orificio de entrada y uno de salida.</p>
+                    </li>
+                </ul>
             </div>
         </section>
-        
     </main>
 
     <!--FOOTER-->
@@ -162,4 +161,26 @@
 
 </body>
 <script src="assets/js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+    });
+</script>
 </html>

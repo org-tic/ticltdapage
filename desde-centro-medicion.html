@@ -50,51 +50,49 @@
             </div>
         </header>
 
-    <main class="main__acomety">
-        <section class="acomety__content">
-            <header class="acomety__header">
-                <h1 class="acomety__title">Suspensión y reconexión desde centro de medición</h1>
-            </header>
-            <div class="content__info">
-                <div class="content__acomety-images">
-                    <img class="images" src="assets/img/img-gal-8.jpg" alt="trabajador">
-                    <img class="images" src="assets/img/img-gal-4.jpeg" alt="trabajador">
-                </div>
+        <main class="main__acomety">
+            <section class="acomety__content">
+                <header>
+                    <h1 class="acomety__title">Suspensión y reconexión desde centro de medición</h1>
+                </header>
                 <div class="content__explain">
                     <p class="acomety__explain">
                         Realizar la reconexión del servicio público de gas natural por centro de 
                         medición cumpliendo con los requisitos establecidos por el cliente, 
                         con los procedimientos de calidad, seguridad y salud en el trabajo 
                         de la empresa y usando los elementos de protección personal para 
-                        lograr un buen servicio y garantizar unas condiciones de trabajo seguras
+                        lograr un buen servicio y garantizar unas condiciones de trabajo seguras.
                     </p>
                 </div>
-            </div>
-            
-            <div class="content__acomety--points">
-                <div class="acomety--points__images">
-                    <img class="images" src="assets/img/IMG_E8001-scaled.jpg" alt="trabajador">
+                <div class="content__info">
+                    <div class="slider-container">
+                        <button id="prevBtn" class="slider__button">&#10094;</button>
+                        <div class="slider">
+                            <img class="images slide active" src="assets/img/img-gal-8.jpg" alt="trabajador">
+                            <img class="images slide" src="assets/img/img-gal-4.jpeg" alt="trabajador">
+                        </div>
+                        <button id="nextBtn" class="slider__button">&#10095;</button>
+                    </div>
                 </div>
+        
                 <div class="acomety--points__explain">
-                    <uL class="acomety__list">
+                    <ul class="acomety__list">
                         <li class="acomety__item">
                             <h3 class="acomety--points__subtitle">Enrutar:</h3>
                             <p class="acomety--points__info">ordenar la ruta de trabajo, por predios, en forma consecutiva.</p>
                         </li>
                         <li class="acomety__item">
                             <h3 class="acomety--points__subtitle">Reconexión:</h3>
-                            <p class="acomety--points__info">Procedimiento mediante el cual se desbloquean las acometidas de gases de los usuarios que se encontraban en mora..</p>
+                            <p class="acomety--points__info">Procedimiento mediante el cual se desbloquean las acometidas de gases de los usuarios que se encontraban en mora.</p>
                         </li>
                         <li class="acomety__item">
                             <h3 class="acomety--points__subtitle">Consola Administrativa:</h3>
-                            <p class="acomety--points__info">Aplicativo Web que permite interactuar con los datos del usuario en tiempo real y administrar las ordenes de trabajo (OT).</p>
+                            <p class="acomety--points__info">Aplicativo Web que permite interactuar con los datos del usuario en tiempo real y administrar las órdenes de trabajo (OT).</p>
                         </li>
-                    </uL>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        
-    </main>
+            </section>
+        </main>
 
     <!--FOOTER-->
     <footer>
@@ -163,4 +161,26 @@
 
 </body>
 <script src="assets/js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+    });
+</script>
 </html>

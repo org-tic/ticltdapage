@@ -6,40 +6,70 @@
     background-color: white;
 }
 
-.acomety__header{
-    width: 100%;
-    margin: 3rem 4rem;
-}
 
 .acomety__title{
-    font-size: 2.7rem;
+    font-size: 4rem;
     color: var(--primary-color-logo);
     text-align: center;
 }
 
 .acomety__content{
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
 }
 
 
-.content__acomety-images{
+
+/*SLIDER*/
+.slider-container {
+    position: relative;
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
     display: flex;
-    width: 100%;
-    gap: 4rem;
+    align-items: center;
     justify-content: center;
-    justify-items: center;
-}
-
-.images{
-    width: 450px;
-    height: 40rem;
+    margin: auto;
     border-radius: 10px;
 }
 
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+/*FIN SLIDER */
 .content__info{
     width: 100%;
     display: flex;
@@ -59,13 +89,11 @@
 
 .acomety__explain{
     width: 70%;
-    margin: 5rem;
     background: white;
-    padding: 5rem 10rem;
     border-radius: 10px;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 35px;
 }
 
 .content__acomety--points{
@@ -79,25 +107,28 @@
 
 
 .acomety--points__explain{
+    display: flex;
     justify-content: center;
-    text-align: justify;
-    border-radius: 10px;
-    box-shadow: 2px 5px 21px rgba(0, 0, 0, 0.3);
-    padding: 2rem 5rem;
+    flex-wrap: wrap;
 }
 
 .acomety__list{
-    width: 45rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.acomety__list p{
     text-align: justify;
 }
-
-.acomety__item{
-    margin-top: 3.4rem;
-    list-style-type: disclosure-closed;
-    color: var(--primary-color-logo);
-    font-size: 15px;
+.acomety__list h3{
+    font-size: 2rem;
 }
-
+.acomety__item{
+    color: var(--primary-color-logo);
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 310px;
+}
 .acomety--points__subtitle{
     font-size: 1.9rem;
     color: var(--primary-color-logo);
