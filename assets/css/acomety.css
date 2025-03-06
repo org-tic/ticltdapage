@@ -115,6 +115,7 @@
 .acomety__list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .acomety__list p{
     text-align: justify;
